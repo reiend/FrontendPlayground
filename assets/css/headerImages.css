@@ -1,26 +1,30 @@
 
 .header-images div::before{
-    background-image: url("../../images/ShieldOfSparta.png");
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/ShieldOfSparta.png");
     background-size: cover;
     background-position: center;
     content: " ";
     display: block;
     color: white;
     width: 50vw;
-    height: 50vh;
+    height: 53vh;
+    clip-path: polygon(50% 0%, 100% 0%, 100% 65%, 50% 100%, 0% 65%, 0% 0%);
 }
 
 .header-images div::after{
-    background-image: url("../../images/Code.jpg");
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/Code.jpg");
     background-size: cover;
     background-position: center;
     content: " ";
     display: block;
     color: white;
     width: 50vw;
-    height: 50vh;
+    height: 53vh;
+    clip-path: polygon(50% 0%, 100% 0%, 100% 65%, 50% 100%, 0% 65%, 0% 0%);
+   
 }
 
-.header-images div{
+.images {
     display: flex;
+    filter: drop-shadow(0px 10px 5px rgba(0, 0, 0, 0.678));
 }
