@@ -10,13 +10,3 @@ of my time investing on improving my skils exploring
 web development and 3d graphics. 
 
 
-    and I am glad to became part of 
-avion school to boost my learning, confidence 
-and communication skills.
-
-    on the first part of learning. I learn a how
-create github pages, It also sharpens my understanding 
-on how version control works, improve my writing skills 
-and most important thing taking a step forward.
-
-
