@@ -1,0 +1,26 @@
+
+.header-images div::before{
+    background-image: url("../../images/ShieldOfSparta.png");
+    background-size: cover;
+    background-position: center;
+    content: " ";
+    display: block;
+    color: white;
+    width: 50vw;
+    height: 50vh;
+}
+
+.header-images div::after{
+    background-image: url("../../images/Code.jpg");
+    background-size: cover;
+    background-position: center;
+    content: " ";
+    display: block;
+    color: white;
+    width: 50vw;
+    height: 50vh;
+}
+
+.header-images div{
+    display: flex;
+}
