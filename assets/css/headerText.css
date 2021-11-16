@@ -1,6 +1,40 @@
 
+/* 
+.artAndTech, .header-me, .header-greet {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} */
 
 
+.header-text {
+    width: 70%;
+    min-height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
 
+.artAndTech {
+    background-color: red;
+    width: 80%;
+    height: 10vh;
+}
 
-    
+.header-me {
+    background-color: blue;
+    width: 80%;
+    height: 30vh;
+}
+
+.header-greet {
+    background-color: green;
+    width: 80%;
+    height: 20vh;
+}

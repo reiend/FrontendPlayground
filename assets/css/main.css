@@ -5,3 +5,12 @@
     list-style: none;
     outline: none;
 }
+
+.container {
+    position: relative;
+    min-height: 100vh;
+    background-color: grey;
+}
+div {
+    font-size: 50px;
+}
