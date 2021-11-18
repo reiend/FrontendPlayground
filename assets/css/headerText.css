@@ -22,19 +22,92 @@
 }
 
 .artAndTech {
-    background-color: red;
+    
     width: 80%;
     height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    align-items: center;
+}
+
+.art, .and, .tech {
+    font-size: 150px;
+    display: block;
+    color: rgb(173, 173, 173);
+    position: relative;
+    text-align: center;
+}
+
+.art {
+   left: -50px;
+}
+
+
+.and {
+    left: 45px;
+    font-size: 100px;
+}
+
+
+.tech {
+   left: 65px;
 }
 
 .header-me {
-    background-color: blue;
+    
     width: 80%;
     height: 30vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.artstation, .profile, .github {
+    color: rgb(182, 182, 182);
+    position: relative;
+    
+}
+.artstation {
+    font-size: 125px;
+    left: -20px;
+    align-self: flex-end;
+    margin-top: 30px;
+}
+.profile {
+    font-size: 200px;
+    top: -50px;
+}
+
+.github {
+    font-size: 125px;
+    left: 14px;
+    align-self: flex-end;
+    margin-top: 30px;
 }
 
 .header-greet {
-    background-color: green;
-    width: 80%;
+    
+    max-width: 100%;
+    width: 600px;
     height: 20vh;
+    display: flex;
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: space-around;
 }
+
+.facebook, .linkedin, .gmail {
+    font-size: 95px;
+}
+
+/* .facebook {
+
+}
+
+.linkedin {
+
+}
+
+.gmail {
+
+} */
