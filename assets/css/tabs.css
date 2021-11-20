@@ -1,0 +1,58 @@
+.art-tab {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    width: 100px;
+    height: 50px;
+    position: absolute;
+    top: 3%;
+    cursor: pointer;
+}
+
+.art-line1 {
+    background-color: rgb(216, 216, 216);
+    width: 100px;
+    height: 10px;
+}
+.art-line2 {
+    background-color: rgb(216, 216, 216);
+    width: 60px;
+    height: 10px;
+}
+.art-line3 {
+    background-color: rgb(216, 216, 216);
+    width: 30px;
+    height: 10px;
+}
+
+.tech-tab {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    width: 100px;
+    height: 50px;
+    position: absolute;
+    bottom: 3%;
+    right: 0%;
+    cursor: pointer;
+}
+
+.tech-line1 {
+    background-color: rgb(216, 216, 216);
+    width: 100px;
+    height: 10px;
+}
+.tech-line2 {
+    background-color: rgb(216, 216, 216);
+    width: 60px;
+    height: 10px;
+}
+.tech-line3 {
+    background-color: rgb(216, 216, 216);
+    width: 30px;
+    height: 10px;
+}
+
+

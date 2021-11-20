@@ -1,113 +1,29 @@
-
-/* 
-.artAndTech, .header-me, .header-greet {
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-} */
-
-
-.header-text {
-    width: 70%;
-    min-height: 100%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.text-container {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 
-.artAndTech {
-    
-    width: 80%;
-    height: 10vh;
-    display: flex;
-    justify-content: space-between;
-    margin-top: 50px;
-    align-items: center;
+.text-art {
+    order: 1;
+    background: linear-gradient(136.18deg, rgba(0, 0, 0, 0.493) 54.55%, rgba(0, 0, 0, 0) 73.23%), #A8A8A8;
 }
 
-.art, .and, .tech {
-    font-size: 150px;
-    display: block;
-    color: rgb(173, 173, 173);
-    position: relative;
+.text-tech {
+    order: 4;
+    background: linear-gradient(312.9deg, rgba(0, 0, 0, 0.493) 48.74%, rgba(0, 0, 0, 0) 76.93%), #A8A8A8;
+}
+
+.art, .tech {
     text-align: center;
 }
 
-.art {
-   left: -50px;
+.text {
+    font-size: 10rem;
+    color: #cccccc;
+    filter: contrast(1);
+    text-shadow: 8px 8px 10px black;
+    text-transform: uppercase;
 }
 
 
-.and {
-    left: 45px;
-    font-size: 100px;
-}
-
-
-.tech {
-   left: 65px;
-}
-
-.header-me {
-    
-    width: 80%;
-    height: 30vh;
-    display: flex;
-    justify-content: space-between;
-}
-
-.artstation, .profile, .github {
-    color: rgb(182, 182, 182);
-    position: relative;
-    
-}
-.artstation {
-    font-size: 125px;
-    left: -20px;
-    align-self: flex-end;
-    margin-top: 30px;
-}
-.profile {
-    font-size: 200px;
-    top: -50px;
-}
-
-.github {
-    font-size: 125px;
-    left: 14px;
-    align-self: flex-end;
-    margin-top: 30px;
-}
-
-.header-greet {
-    
-    max-width: 100%;
-    width: 600px;
-    height: 20vh;
-    display: flex;
-    margin-bottom: 60px;
-    display: flex;
-    justify-content: space-around;
-}
-
-.facebook, .linkedin, .gmail {
-    font-size: 95px;
-}
-
-/* .facebook {
-
-}
-
-.linkedin {
-
-}
-
-.gmail {
-
-} */

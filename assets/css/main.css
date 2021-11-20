@@ -6,11 +6,20 @@
     outline: none;
 }
 
-.container {
+.container-main {
+    width: 100vw;
+    height: 100vh;
+    background-color: #A8A8A8;
+
+}
+
+.header-main {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     position: relative;
-    min-height: 100vh;
-    background-color: grey;
 }
-div {
-    font-size: 50px;
-}
+
+    
