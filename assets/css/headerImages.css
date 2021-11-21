@@ -4,7 +4,7 @@
     background-position: center;
     background-size: cover;
     filter: saturate(0.35);
-    border-top: 10px solid rgb(216, 216, 216);
+    border-top: 10px solid #d8d8d8;
     order: 3;
     position: relative;
     transition: 300ms ease-in;
@@ -21,7 +21,7 @@
     background-position: center;
     background-size: cover;
     filter: saturate(0.35);
-    border-bottom: 10px solid rgb(216, 216, 216);
+    border-bottom: 10px solid #d8d8d8;
     order: 2;
     position: relative;
     transition: filter 300ms ease-in;
