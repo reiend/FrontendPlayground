@@ -12,6 +12,7 @@
 .text-tech {
     order: 4;
     background: linear-gradient(312.9deg, rgba(0, 0, 0, 0.493) 48.74%, rgba(0, 0, 0, 0) 76.93%), #A8A8A8;
+
 }
 
 .art, .tech {
@@ -24,6 +25,17 @@
     filter: contrast(1);
     text-shadow: 8px 8px 10px black;
     text-transform: uppercase;
+    animation: 250ms cubic-bezier(0.55, 0.055, 0.675, 0.19) forwards 1800ms bubble;
+    transform: scale(0.90);
 }
 
+@keyframes bubble {
+    from {
+        transform: scale(0.90);
+    }
+    to {
+        transform: scale(1);
+    }
+    
+}
 

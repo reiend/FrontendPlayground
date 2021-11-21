@@ -1,28 +1,29 @@
 
-@media (max-width: 1330px){
+@media screen and (max-width: 1330px){
     .profile-border-outer {
         width: 350px;
         height: 350px;
     }
 }
 
-@media (max-width: 1140px){
+@media screen and (max-width: 1140px){
     .profile-border-outer {
         width: 300px;
         height: 300px;
     }
 }
 
-@media (max-width: 920px){
+@media screen and (max-width: 920px){
     .profile-border-outer {
         width: 250px;
         height: 250px;
     }
 }
 
-@media (max-width: 360px){
+@media screen and (max-width: 360px){
     .profile-border-outer {
         width: 200px;
         height: 200px;
     }
 }
+
