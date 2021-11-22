@@ -1,5 +1,10 @@
 
-Tomorrow
+// History 
+11/22/21
 Refactor tab.js             X
 
+
+// Todo
 Replace css with scss       
+Learn Webpack
+going dynamic               
