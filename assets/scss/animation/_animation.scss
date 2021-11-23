@@ -1,0 +1,21 @@
+@import "./timingFunctions";
+@import "./animationOf";
+
+@keyframes slideLeft {
+    from  {
+        left: 0;
+    }
+    to {
+        left: -50%;
+    }
+}
+
+@keyframes slideRight {
+    from  {
+        right: 0;
+    }
+    to {
+        right: -50%;
+    }
+}
+

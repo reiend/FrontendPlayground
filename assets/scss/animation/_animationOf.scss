@@ -1,0 +1,9 @@
+
+@import "./timingFunctions";
+$duration: 1s;
+$mission: forwards;
+
+@mixin slideLandingPage ($zIndex, $delay, $animation) {
+    z-index: $zIndex;
+    animation: $duration $pull $delay $mission $animation;
+}

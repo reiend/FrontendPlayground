@@ -1,0 +1,26 @@
+
+@mixin posAndFlow {
+    position: relative;
+    overflow: hidden;
+}
+
+@mixin twoByTwo {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+@mixin dimAndBackground1($type){
+    content: " ";
+    position: absolute;
+    width: vpDimX(width-5);
+    height: vpDimY(height-5);
+    background: defColorGrad($type);
+}
+
+@mixin dimAndBackground2($color){
+    @include posAndFlow;
+    width: vpDimX(width-10);
+    height: vpDimY(height-10);
+    background-color: $color;
+}
