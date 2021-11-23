@@ -1,0 +1,33 @@
+@import "../pallete/colors/getColor";
+@import '../basic/saturation';
+
+$order-3: 3;
+$order-2: 2;
+
+$border: 10px solid color(grey-5);
+$borderTop : 1;
+$borderBot: 2;
+
+@mixin imageAndView ($imageUrl, $position, $borderType, $order) {
+    background-image: $imageUrl;
+    background-position: $position;
+    background-size: cover;
+    @include setSaturate(0.35);
+    @if $borderType == $borderTop {
+        border-top: $border;
+    }
+    @if $borderType == $borderBot {
+        border-bottom: $border;
+    }
+    position: relative;
+    transition: filter 300ms ease-in;
+    order: $order;
+    &:hover {
+        @include setSaturate(1);
+    }
+}
+
+@mixin centerAndCover {
+    background-position: center;
+    background-size: cover;
+}

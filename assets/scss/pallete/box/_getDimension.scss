@@ -14,4 +14,11 @@
     @return map-get($perHeight, $dim);
 }
 
+@function pxDimX($dim){
+    @return map-get($pxWidth, $dim);
+}
+@function pxDimY($dim){
+    @return map-get($pxHeight, $dim);
+}
+
 

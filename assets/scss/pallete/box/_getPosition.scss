@@ -1,0 +1,9 @@
+@import "./position";
+
+@function perPosTop($pos){
+    @return map-get($perTop, $pos);
+}
+@function perPosLeft($pos){
+    @return map-get($perLeft, $pos);
+    
+}
