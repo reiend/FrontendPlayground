@@ -9,4 +9,110 @@
   font-size: 17px;
   font-family: 'Poppins', sans-serif;
 }
+
+@-webkit-keyframes slideLeft {
+  from {
+    left: 0;
+  }
+  to {
+    left: -50%;
+  }
+}
+
+@keyframes slideLeft {
+  from {
+    left: 0;
+  }
+  to {
+    left: -50%;
+  }
+}
+
+@-webkit-keyframes slideRight {
+  from {
+    right: 0;
+  }
+  to {
+    right: -50%;
+  }
+}
+
+@keyframes slideRight {
+  from {
+    right: 0;
+  }
+  to {
+    right: -50%;
+  }
+}
+
+.container-main {
+  position: relative;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  background-color: #A8A8A8;
+}
+
+.container-main::before {
+  content: " ";
+  position: absolute;
+  width: 50vw;
+  height: 50vh;
+  background: linear-gradient(312.9deg, #0000007e 48.74%, #00000000 76.93%), #A8A8A8;
+  z-index: 2;
+  -webkit-animation: 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) 300ms forwards slideLeft;
+          animation: 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) 300ms forwards slideLeft;
+}
+
+.container-main::after {
+  content: " ";
+  position: absolute;
+  width: 50vw;
+  height: 50vh;
+  background: linear-gradient(-312.9deg, #0000007e 48.74%, #00000000 76.93%), #5a5a5a;
+  z-index: 2;
+  -webkit-animation: 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) 1250ms forwards slideRight;
+          animation: 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) 1250ms forwards slideRight;
+  right: 0;
+  top: 0;
+}
+
+.header-main-container {
+  width: 100%;
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
+  position: relative;
+  overflow: hidden;
+}
+
+.header-main-container::before {
+  content: " ";
+  position: absolute;
+  width: 50vw;
+  height: 50vh;
+  background: linear-gradient(-492.9deg, #0000007e 48.74%, #00000000 76.93%), #929292;
+  z-index: 1;
+  -webkit-animation: 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) 450ms forwards slideLeft;
+          animation: 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) 450ms forwards slideLeft;
+  bottom: 0;
+}
+
+.header-main-container::after {
+  content: " ";
+  position: absolute;
+  width: 50vw;
+  height: 50vh;
+  background: linear-gradient(132.9deg, #0000007e 48.74%, #00000000 76.93%), #787878;
+  z-index: 1;
+  -webkit-animation: 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) 1100ms forwards slideRight;
+          animation: 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) 1100ms forwards slideRight;
+  right: 0;
+  bottom: 0;
+}
 /*# sourceMappingURL=main.css.map */

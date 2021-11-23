@@ -1,0 +1,23 @@
+@import "./colors";
+
+
+@function color($color){
+    @return map-get($grey, $color);
+}
+
+@function defColorGrad($type){
+    @if $type == 4 {
+        @return linear-gradient(312.9deg, #0000007e 48.74%, #00000000 76.93%), color(grey-4);
+    } 
+    @if $type == 3 {
+        @return linear-gradient((-312.9deg - 180deg), #0000007e 48.74%, #00000000 76.93%), color(grey-3);
+ 
+    }
+    @if $type == 2 {
+        @return  linear-gradient((312.9deg - 180deg), #0000007e 48.74%, #00000000 76.93%), color(grey-2);
+    }
+    @if $type == 1 {
+        @return linear-gradient(-312.9deg, #0000007e 48.74%, #00000000 76.93%), color(grey-1);
+    }
+
+}

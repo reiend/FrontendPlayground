@@ -1,0 +1,45 @@
+@import "../pallete/colors/getColor";
+@import "../pallete/box/getDimension";
+@import "../animation/animation";
+
+
+
+@import "./containerInfo";
+.container-main {
+    @include dimAndBackground2(color(grey-4));
+    &::before {
+        @include dimAndBackground1(4);
+        @include slideLandingPage(2, 300ms, slideLeft);
+    }
+    &::after {
+        @include dimAndBackground1(1);
+        @include slideLandingPage(2, 1250ms, slideRight);
+        right: 0;
+        top: 0;
+    }
+}
+
+.header-main-container {
+    width: perDimX(width-10);
+    height: perDimY(height-10);
+    @include twoByTwo;
+    @include posAndFlow;
+    &::before {
+        @include dimAndBackground1(3);
+        @include slideLandingPage(1, 450ms, slideLeft);
+        bottom: 0;
+    }
+    &::after {
+        @include dimAndBackground1(2);
+        @include slideLandingPage(1, 1100ms, slideRight);
+        right: 0;
+        bottom: 0;
+    }
+}
+
+
+
+
+
+
+

@@ -1,0 +1,17 @@
+@import "./dimensions";
+
+@function vpDimX($dim){
+    @return map-get($vpWidth, $dim);
+}
+@function vpDimY($dim){
+    @return map-get($vpHeight, $dim);
+}
+
+@function perDimX($dim){
+    @return map-get($perWidth, $dim);
+}
+@function perDimY($dim){
+    @return map-get($perHeight, $dim);
+}
+
+
