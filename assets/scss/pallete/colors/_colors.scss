@@ -1,8 +1,8 @@
 
-// Container Colors
-
+// Reusable
 // Grey
 $grey: (
+    "grey-5": #d8d8d8,
     "grey-4": #A8A8A8,
     "grey-3": #929292,
     "grey-2": #787878,
@@ -10,9 +10,13 @@ $grey: (
 );
 
 // Black
-$black: (
-    "black-0" 
-)
 
 
 // Default Color gradients
+$fromColor: #0000007e 48.74%;
+$toColor: #00000000 76.93%;
+
+// Profile Colors
+$profileInner: #838383;
+
+

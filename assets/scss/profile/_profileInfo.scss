@@ -1,0 +1,23 @@
+@import "../pallete/box/getPosition";
+
+@mixin absCenter {
+    position: absolute;
+    top: perPosTop(top-5);
+    left: perPosLeft(left-5);
+    transform: translate(-50%, -50%);
+}
+
+$howRound: 50%;
+@mixin dimensionCircle($color, $width, $height) {
+    background-color: $color;
+    border-radius: $howRound;
+    width: $width;
+    height: $height;
+}
+
+@mixin profileCircle($imagePath, $width, $height) {
+    background: $imagePath;
+    border-radius: $howRound;
+    width: $width;
+    height: $height;
+}

@@ -1,0 +1,32 @@
+@import "../pallete/colors/getColor";
+@import "../pallete/box/getDimension";
+@import "../basic/saturation";
+@import "../images/imageInfo";
+@import "../images/images";
+@import "../animation/animation";
+@import "../animation/animationOf";
+
+
+@import "./profileInfo";
+.profile-border-outer {
+    @include dimensionCircle(color(grey-4), pxDimX(width-4), pxDimY(height-4));
+    @include absCenter;  
+}
+
+.profile-border-inner {
+    @include dimensionCircle($profileInner, perDimX(width-8), perDimY(height-8));
+    @include absCenter;
+}
+
+.profile-image {
+    @include profileCircle($profileImage, perDimX(width-10), perDimY(height-10));
+    @include centerAndCover;
+    @include setSaturate(0.1);    
+    transform-origin: center;
+    transform: scale(1);
+    transition: filter 300ms ease-in;
+    @include shrinkProfile(2200ms, bubble2);
+    &:hover {
+        @include setSaturate(1);
+    }
+}

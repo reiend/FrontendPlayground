@@ -1,9 +1,14 @@
 
 @import "./timingFunctions";
-$duration: 1s;
+$duration-1s: 1s;
+$duration-250ms: 250ms;
 $mission: forwards;
 
 @mixin slideLandingPage ($zIndex, $delay, $animation) {
     z-index: $zIndex;
-    animation: $duration $pull $delay $mission $animation;
+    animation: $duration-1s $pull $delay $mission $animation;
+}
+
+@mixin shrinkProfile ($delay, $animation) {
+    animation: $duration-250ms $fastShrink $delay $mission $animation;
 }

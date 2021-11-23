@@ -1,23 +1,25 @@
 @import "./colors";
-
+@import "../angles/angles";
 
 @function color($color){
     @return map-get($grey, $color);
 }
 
+@function linearGradColor($deg){
+    @return linear-gradient($deg, $fromColor, $toColor);
+}
+
 @function defColorGrad($type){
     @if $type == 4 {
-        @return linear-gradient(312.9deg, #0000007e 48.74%, #00000000 76.93%), color(grey-4);
+        @return linearGradColor($posDeg-90), color(grey-4);
     } 
     @if $type == 3 {
-        @return linear-gradient((-312.9deg - 180deg), #0000007e 48.74%, #00000000 76.93%), color(grey-3);
- 
+        @return linearGradColor($negDeg-90), color(grey-3); 
     }
     @if $type == 2 {
-        @return  linear-gradient((312.9deg - 180deg), #0000007e 48.74%, #00000000 76.93%), color(grey-2);
+        @return linearGradColor($posMirDeg-90), color(grey-2);
     }
     @if $type == 1 {
-        @return linear-gradient(-312.9deg, #0000007e 48.74%, #00000000 76.93%), color(grey-1);
+        @return linearGradColor($negMirDeg-90), color(grey-1);
     }
-
 }

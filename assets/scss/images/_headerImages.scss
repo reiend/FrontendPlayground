@@ -1,0 +1,11 @@
+@import "./images";
+@import "./imageInfo";
+
+.image-1 {
+    @include imageAndView($artImage, center, $borderTop, $order-3);
+}
+
+.image-2 {
+    @include imageAndView($codeImage, center, $borderBot, $order-2);
+}
+
