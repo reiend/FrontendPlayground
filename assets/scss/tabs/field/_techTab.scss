@@ -1,0 +1,22 @@
+@import "./artTab";
+
+.tech-tab {
+    @include fieldTabFlexCol($right);
+    @include dimAndPos($right, 25px);
+}
+
+.tech-tab-move{
+    transform: translateX(0);
+}
+
+.tech-line1 {
+    @extend .art-line1;
+}
+.tech-line2 {
+    @extend .art-line2;
+}
+.tech-line3 {
+    @extend .art-line3;
+}
+
+

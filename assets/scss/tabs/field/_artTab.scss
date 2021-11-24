@@ -1,0 +1,20 @@
+@import "../fieldTabInfo";
+
+.art-tab {
+    @include fieldTabFlexCol($left);
+    @include dimAndPos($left, -25px);
+}
+
+.art-tab-move{
+    transform: translateX(0);
+}
+
+.art-line1 {
+    @include lineWidth(100px);
+}
+.art-line2 {
+    @include lineWidth(60px);
+}
+.art-line3 {
+    @include lineWidth(30px);
+}

@@ -1,0 +1,56 @@
+@import "../pallete/colors/colors";
+
+$left: 1;
+$right: 2;
+@mixin fieldTabFlexCol($type) {
+    display: flex;
+    @if $type == 1 {
+        flex-direction: column;
+        justify-content:space-between;
+    }
+    @if $type == 2 {
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+}
+@mixin dimAndPos($direction, $translateX) {
+    width: 100px;
+    height: 50px;
+    position: absolute;
+    @if $direction == $left {
+        top: 3%;
+    }
+    @if $direction == $right {
+        bottom: 3%;
+        right: 0%;
+    }
+    cursor: pointer;
+    transform: translateX($translateX);
+    transition: transform 200ms linear;
+}
+
+$lineHeight: 10px;
+@mixin lineWidth($width) {
+    background-color: $lineColor;
+    width: $width;
+    height: $lineHeight;
+}
+
+
+@mixin expandInfo($type) {
+    position: absolute;
+    width: 50vw;
+    height: 100vh;
+    background-color: #929292;
+    @if $type == $left {
+        top: 0;
+        right: -50%;
+        transition: right 200ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    }
+    @if $type == $right {
+        left: -50%;
+        z-index: 1;
+        transition: left 200ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    }
+}
