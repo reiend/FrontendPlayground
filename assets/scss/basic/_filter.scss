@@ -1,3 +1,6 @@
 @mixin setSaturate($saturationLevel){
     filter: saturate($saturationLevel);
 }
+@mixin setContrast($contrastLevel){
+    filter: contrast($contrastLevel);
+}

@@ -37,6 +37,10 @@
     }
 }
 
+.text-container {
+    @include flexCenter(row);
+}
+
 
 
 

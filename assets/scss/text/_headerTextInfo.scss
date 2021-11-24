@@ -1,0 +1,17 @@
+@import "../pallete/colors/getColor";
+@import "../basic/filter";
+
+@mixin orderAndBackground($order, $type) {
+    order: $order;
+    background: defColorGrad($type);
+}
+
+@mixin headerTextInfo($fontSize, $color) {
+    text-align: center;
+    cursor: default;
+    font-size: $fontSize;
+    color: $color;
+    @include setContrast(1);
+    text-shadow: 8px 8px 10px black;
+    text-transform: uppercase;
+}

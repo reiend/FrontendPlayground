@@ -1,0 +1,20 @@
+@import "./headerTextInfo";
+@import "../pallete/colors/colors";
+@import "../animation/animation";
+@import "../animation/animationOf";
+
+.text-art {
+    @include orderAndBackground(1, 5);
+}
+
+.text-tech {
+    @include orderAndBackground(4, 6);      
+}
+
+.text {
+    @include headerTextInfo(10rem, $headerTextColor);
+    transform: scale(0.90);
+    @include animatedBy($duration-250ms, $slowScaleUp, 1800ms, bubble1);
+
+}
+

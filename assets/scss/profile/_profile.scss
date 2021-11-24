@@ -1,6 +1,6 @@
 @import "../pallete/colors/getColor";
 @import "../pallete/box/getDimension";
-@import "../basic/saturation";
+@import "../basic/filter";
 @import "../images/imageInfo";
 @import "../images/images";
 @import "../animation/animation";
@@ -25,7 +25,7 @@
     transform-origin: center;
     transform: scale(1);
     transition: filter 300ms ease-in;
-    @include shrinkProfile(2200ms, bubble2);
+    @include animatedBy($duration-250ms, $fastShrink, 2200ms, bubble2);
     &:hover {
         @include setSaturate(1);
     }

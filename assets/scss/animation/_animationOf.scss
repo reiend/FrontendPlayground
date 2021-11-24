@@ -4,11 +4,15 @@ $duration-1s: 1s;
 $duration-250ms: 250ms;
 $mission: forwards;
 
+
 @mixin slideLandingPage ($zIndex, $delay, $animation) {
     z-index: $zIndex;
     animation: $duration-1s $pull $delay $mission $animation;
 }
 
-@mixin shrinkProfile ($delay, $animation) {
-    animation: $duration-250ms $fastShrink $delay $mission $animation;
+@mixin animatedBy($duration, $timing, $delay, $animation ) {
+    animation: $duration $timing $delay $mission $animation;
 }
+
+
+
