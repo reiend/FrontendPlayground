@@ -1,0 +1,19 @@
+@import "./field/artTab";
+@import "./field/techTab";
+
+.art-tab-expand{
+    @include expandInfo($left);
+} 
+
+.art-tab-expanded {
+    right: 0;
+}
+
+.tech-tab-expand {
+    @include expandInfo($right);
+}
+
+.tech-tab-expanded {
+    left: 0;
+}
+
