@@ -9,14 +9,20 @@ $grey: (
     "grey-1": #5a5a5a,
 );
 
-// Black
+
+// Color gradients
+$forGradBlack-1: #0000007e;
+$forGradBlack-2: #00000000;
 
 
-// Default Color gradients
-$fromColor: #0000007e 48.74%;
-$toColor: #00000000 76.93%;
+$landingFromColor: $forGradBlack-1 48.74%;
+$landingToColor: $forGradBlack-2 76.93%;
+
+$headerTextFromColor: $forGradBlack-1 54.55%;
+$headerTextToColor:$forGradBlack-2 73.23%;
 
 // Profile Colors
 $profileInner: #838383;
+$headerTextColor: #cccccc;
 
 

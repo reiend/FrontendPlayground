@@ -11,8 +11,6 @@
 
     transform: translateX(-25px);
     transition: transform 200ms linear;
-    
-
 }
 
 .art-tab-move{
