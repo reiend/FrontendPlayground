@@ -1,0 +1,16 @@
+@import "./breakpoints";
+
+.text {
+    @include width1600px {
+        font-size: 10rem;
+    }
+    @include width1050px {
+        font-size: 7rem;
+    }
+    @include width640px {
+        font-size: 5rem;
+    }
+    @include width430px {
+        font-size: 3.5rem;
+    }
+}   

@@ -1,0 +1,23 @@
+@import "./breakpoints";
+@import "./breakpointsInfo";
+
+.profile-border-outer {
+     @include width1600px {
+          @include profileDim(350px);
+     }
+     @include width1350px {
+          @include profileDim(300px);
+     }
+     @include width1200px {
+          @include profileDim(250px);
+     }
+     @include width640px {
+          @include profileDim(200px);
+     }
+}
+
+.image-2 {
+     @include width640px {
+          background-position: right; 
+     }
+  }
