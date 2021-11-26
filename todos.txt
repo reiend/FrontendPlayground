@@ -3,8 +3,14 @@
 11/22/21
 Refactor tab.js             X
 
+11/24/21
+Replace css with scss    
+
+11/26/21
+Learn Webpack
 
 // Todo
-Replace css with scss       
-Learn Webpack
-Learn React               
+Learn React
+Create a front-end project
+Learn back-end with node.js
+        

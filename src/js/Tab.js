@@ -1,4 +1,4 @@
-class Tab {
+export class Tab {
     constructor(name, expandName, expand) {
         this.name = name;
         this.expandName = expandName;
