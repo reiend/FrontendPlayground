@@ -1,8 +1,9 @@
 
-const path = require("path");
-const { merge } = require("webpack-merge");
+// Developmen COnfig
+const path = require("path");                               // for files filepath relative
+const { merge } = require("webpack-merge");                 // for merging different webpack config files
 const common = require("./webpack.common");
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');   // html loader
 
 module.exports = merge(common, {
     mode: "development",
@@ -14,6 +15,7 @@ module.exports = merge(common, {
         rules: [
             {
                 test: /\.scss$/,
+                // loaders for styles
                 use:
                     [
                         "style-loader",
