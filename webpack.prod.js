@@ -37,7 +37,7 @@ module.exports = merge(common, {
                 new TerserPlugin(),
                 new CssMinimizerPlugin(),
                 new HtmlWebpackPlugin({
-                    filename: "[name][contenthash].html",
+                    filename: "index.html",
                     template: "./src/index.html",
                     inject: "body",
                     minify: {
