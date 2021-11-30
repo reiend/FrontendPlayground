@@ -12,5 +12,5 @@ Learn Webpack
 // Todo
 Learn React
 Create a front-end project
-Learn back-end with node.js
+Learn a database(any)
         
