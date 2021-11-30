@@ -9,8 +9,11 @@ Replace css with scss
 11/26/21
 Learn Webpack
 
-// Todo
-Learn React
-Create a front-end project
+11/30/21
+Learn React fundamentals
+
+// Todos
+Create a front-end project with React
 Learn a database(any)
+
         
